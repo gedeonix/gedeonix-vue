@@ -11,9 +11,9 @@
 </template>
 
 <script>
-    import Row from "../components/grid/Row";
-    import Col from "../components/grid/Col";
-    export default {
-        components: {Col, Row}
-    }
+import Row from "../components/grid/Row";
+import Col from "../components/grid/Col";
+export default {
+  components: { Col, Row }
+};
 </script>

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    export default {
-        name: "Row"
-    }
+export default {
+  name: "Row"
+};
 </script>
