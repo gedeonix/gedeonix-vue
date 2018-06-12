@@ -91,6 +91,13 @@ $columns: 12;
 @for $i from 1 to $columns {
   .col.xs-#{$i} { min-width: ($i/$columns) * 100% }
 }
+
+/*
+@each $key, $width in $breakpoints {
+
+}
+*/
+
 @media all and (min-width: $breakpoints[sm]) {
   @for $i from 1 to $columns {
     .col.sm-#{$i} { min-width: ($i/$columns) * 100% }
@@ -106,6 +113,7 @@ $columns: 12;
     .col.lg-#{$i} { min-width: ($i/$columns) * 100% }
   }
 }
+
 @for $i from 1 to $columns {
   .width-#{$i} {
     width: ($i/$columns) * 100%;
