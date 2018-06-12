@@ -1,13 +1,7 @@
-.row {
-  background-color: aqua;
-}
+$columns: 12;
 
-.col {
-  background-color: coral;
-}
-
-
-.row, [class*=row-], .col, [class*=col-] {
+.row, [class*=row-],
+.col, [class*=col-] {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -42,4 +36,78 @@
   flex-grow: 1;
   flex-basis: 0%;
   padding: 0 0.5rem 0.5rem;
+}
+
+@for $i from 1 to $columns {
+  .col-#{$i} {
+    flex-basis: ($i/$columns) * 100%;
+    max-width: ($i/$columns) * 100%;
+  }
+}
+
+@for $i from 1 to $columns {
+  .row-#{$i} > .col { min-width: (1/$i) * 100% }
+}
+
+@for $i from 1 to $columns {
+  .offset-#{$i} { margin-left: ($i/$columns) * 100% }
+}
+
+// RESPONSIVE ROWS
+.row[class*=sm-] > .col,
+.row[class*=md-] > .col,
+.row[class*=lg-] > .col {
+  min-width: 100%;
+}
+
+@for $i from 1 to $columns {
+  .row.xs-#{$i} > .col { min-width: (1/$i) * 100% }
+}
+
+@media all and (min-width: $breakpoints[sm]) {
+  @for $i from 1 to $columns {
+    .row.sm-#{$i} > .col { min-width: (1/$i) * 100% }
+  }
+}
+
+@media all and (min-width: $breakpoints[md]) {
+  @for $i from 1 to $columns {
+    .row.md-#{$i} > .col { min-width: (1/$i) * 100% }
+  }
+}
+@media all and (min-width: $breakpoint-lg) {
+  @for $i from 1 to $columns {
+    .row.lg-#{$i} > .col { min-width: (1/$i) * 100% }
+  }
+}
+
+// RESPONSIVE COLS
+.col[class*=sm-],
+.col[class*=md-],
+.col[class*=lg-]{
+  min-width: 100%;
+}
+
+@for $i from 1 to $columns {
+  .col.xs-#{$i} { min-width: ($i/$columns) * 100% }
+}
+@media all and (min-width: $breakpoints[sm]) {
+  @for $i from 1 to $columns {
+    .col.sm-#{$i} { min-width: ($i/$columns) * 100% }
+  }
+}
+@media all and (min-width: $breakpoints[md]) {
+  @for $i from 1 to $columns {
+    .col.md-#{$i} { min-width: ($i/$columns) * 100% }
+  }
+}
+@media all and (min-width: $breakpoints[lg]) {
+  @for $i from 1 to $columns {
+    .col.lg-#{$i} { min-width: ($i/$columns) * 100% }
+  }
+}
+@for $i from 1 to $columns {
+  .width-#{$i} {
+    width: ($i/$columns) * 100%;
+  }
 }
