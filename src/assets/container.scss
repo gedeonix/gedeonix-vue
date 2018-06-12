@@ -1,0 +1,12 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+  .container {
+    max-width: $breakpoint-lg;
+  }
+}

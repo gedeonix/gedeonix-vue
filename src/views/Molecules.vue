@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main class="main container">
     <h1>Molecules</h1>
     ...
 
-  </div>
+  </main>
 </template>
