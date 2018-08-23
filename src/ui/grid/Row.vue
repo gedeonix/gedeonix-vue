@@ -1,5 +1,5 @@
 <template>
-    <div class="row" :class="classes">
+    <div :class="classes">
         <slot></slot>
     </div>
 </template>

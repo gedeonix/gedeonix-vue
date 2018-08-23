@@ -64,9 +64,6 @@
             </Col>
         </Row>
 
-        <hr>
-        <!-- ===================================================================================================== -->
-
         <h3>Max limit (row-x)</h3>
 
         <Row limit="3" no-gutter>
@@ -89,6 +86,7 @@
 
         <br>
 
+        <comment>TODO</comment>
         <Row limit="3">
             <Col>
                 <div>1</div>
@@ -173,413 +171,443 @@
         </Row>
 
         <h3>Columns (col-x)</h3>
-        <div class="row no-gutter">
-            <div class="col-1">
+        <Row no-gutter>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row no-gutter">
-            <div class="col-2">
+        <Row no-gutter>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row no-gutter">
-            <div class="col-3">
+        <Row no-gutter>
+            <Col width="3">
                 <div>3</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row no-gutter">
-            <div class="col-4">
+        <Row no-gutter>
+            <Col width="4">
                 <div>4</div>
-            </div>
-            <div class="col-4">
+            </Col>
+            <Col width="4">
                 <div>4</div>
-            </div>
-            <div class="col-4">
+            </Col>
+            <Col width="4">
                 <div>4</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row no-gutter">
-            <div class="col-6">
+        <Row no-gutter>
+            <Col width="6">
                 <div>6</div>
-            </div>
-            <div class="col-6">
+            </Col>
+            <Col width="6">
                 <div>6</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row no-gutter">
-            <div class="col-12">
+        <Row no-gutter>
+            <Col width="12">
                 <div>12</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
+
+        <Row no-gutter>
+            <Col width="1">
+                <div>1</div>
+            </Col>
+            <Col width="2">
+                <div>2</div>
+            </Col>
+            <Col width="4">
+                <div>4</div>
+            </Col>
+            <Col width="5">
+                <div>5</div>
+            </Col>
+        </Row>
 
         <br>
 
-        <div class="row">
-            <div class="col-1">
+        <comment>TODO</comment>
+        <Row>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row">
-            <div class="col-2">
+        <Row>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row">
-            <div class="col-3">
+        <Row>
+            <Col width="3">
                 <div>3</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row">
-            <div class="col-4">
+        <Row>
+            <Col width="4">
                 <div>4</div>
-            </div>
-            <div class="col-4">
+            </Col>
+            <Col width="4">
                 <div>4</div>
-            </div>
-            <div class="col-4">
+            </Col>
+            <Col width="4">
                 <div>4</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row">
-            <div class="col-6">
+        <Row>
+            <Col width="6">
                 <div>6</div>
-            </div>
-            <div class="col-6">
+            </Col>
+            <Col width="6">
                 <div>6</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
-        <div class="row">
-            <div class="col-12">
+        <Row>
+            <Col width="12">
                 <div>12</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
+
+        <Row>
+            <Col width="1">
+                <div>1</div>
+            </Col>
+            <Col width="2">
+                <div>2</div>
+            </Col>
+            <Col width="4">
+                <div>4</div>
+            </Col>
+            <Col width="5">
+                <div>5</div>
+            </Col>
+        </Row>
 
         <h3>Auto width</h3>
-
-        <div class="row no-gutter">
-            <div class="col">
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-4">
+            </Col>
+            <Col width="4">
                 <div>4</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-5">
+            </Col>
+            <Col width="5">
                 <div>5</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-6">
+            </Col>
+            <Col width="6">
                 <div>6</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-7">
+            </Col>
+            <Col width="7">
                 <div>7</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-8">
+            </Col>
+            <Col width="8">
                 <div>8</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-9">
+            </Col>
+            <Col width="9">
                 <div>9</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-10">
+            </Col>
+            <Col width="10">
                 <div>10</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-11">
+            </Col>
+            <Col width="11">
                 <div>11</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col-12">
+            </Col>
+        </Row>
+        <Row no-gutter>
+            <Col width="12">
                 <div>12</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
         <br>
-
-        <div class="row">
-            <div class="col">
+        <comment>TODO</comment>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-1">
+            </Col>
+            <Col width="1">
                 <div>1</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-2">
+            </Col>
+            <Col width="2">
                 <div>2</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-3">
+            </Col>
+            <Col width="3">
                 <div>3</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-4">
+            </Col>
+            <Col width="4">
                 <div>4</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-5">
+            </Col>
+            <Col width="5">
                 <div>5</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-6">
+            </Col>
+            <Col width="6">
                 <div>6</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-7">
+            </Col>
+            <Col width="7">
                 <div>7</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-8">
+            </Col>
+            <Col width="8">
                 <div>8</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-9">
+            </Col>
+            <Col width="9">
                 <div>9</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-10">
+            </Col>
+            <Col width="10">
                 <div>10</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
+            </Col>
+        </Row>
+        <Row>
+            <Col>
                 <div>auto</div>
-            </div>
-            <div class="col-11">
+            </Col>
+            <Col width="11">
                 <div>11</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
+            </Col>
+        </Row>
+        <Row>
+            <Col width="12">
                 <div>12</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
         <h3>Mix column (row-x & col-x)</h3>
         <div class="row-6 no-gutter">
