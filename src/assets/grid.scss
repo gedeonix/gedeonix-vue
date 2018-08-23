@@ -1,7 +1,10 @@
-$columns: 12;
+$grid-columns:                  12 !default;
+$grid-padding-x:                .25rem !default;
+$grid-padding-y:                .8rem !default;
 
-.row, [class*=row-],
-.col, [class*=col-] {
+$breakpoints: (mobile: 0, tablet: 40em, desktop: 64em, widescreen: 90em) !default;
+
+@mixin grid-flex {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -15,12 +18,24 @@ $columns: 12;
   &.is-center {
     justify-content: center;
   }
+}
+
+@mixin grid-component-width($name) {
+  @for $i from 1 to $grid-columns + 1 {
+    .#{$name}-#{$i} {
+      width: #{$i*100/$grid-columns+'%'};
+    }
+  }
+}
+
+.row, [class*=row-], .col, [class*=col-] {
+  @include grid-flex;
 };
 
 .row, [class*=row-] {
   align-items: flex-start;
-  margin: 0 0 0 -0.5rem;
-  width: calc(0.5rem + 100% + 0.5rem);
+  margin: 0 0 0 #{-$grid-padding-x};
+  width: calc(#{$grid-padding-x*2} + 100%);
   &.no-gutter {
     margin: 0;
     width: 100%;
@@ -35,87 +50,69 @@ $columns: 12;
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 0%;
-  padding: 0 0.5rem 0.5rem;
+  padding: 0 $grid-padding-x $grid-padding-y;
 }
 
-@for $i from 1 to $columns {
+@for $i from 1 to $grid-columns {
   .col-#{$i} {
-    flex-basis: ($i/$columns) * 100%;
-    max-width: ($i/$columns) * 100%;
+    flex-basis: #{$i*100/$grid-columns+'%' };
+    max-width: #{$i*100/$grid-columns+'%' };
   }
 }
 
-@for $i from 1 to $columns {
-  .row-#{$i} > .col { min-width: (1/$i) * 100% }
+@for $i from 1 to $grid-columns {
+  .row-#{$i} > .col { min-width: #{100/$i+'%'}};
 }
 
-@for $i from 1 to $columns {
-  .offset-#{$i} { margin-left: ($i/$columns) * 100% }
+@for $i from 1 to $grid-columns {
+  .offset-#{$i} { margin-left: #{$i*100/$grid-columns+'%' }}
 }
 
 // RESPONSIVE ROWS
-.row[class*=sm-] > .col,
-.row[class*=md-] > .col,
-.row[class*=lg-] > .col {
-  min-width: 100%;
-}
-
-@for $i from 1 to $columns {
-  .row.xs-#{$i} > .col { min-width: (1/$i) * 100% }
-}
-
-@media all and (min-width: $breakpoints[sm]) {
-  @for $i from 1 to $columns {
-    .row.sm-#{$i} > .col { min-width: (1/$i) * 100% }
+@each $key, $value in $breakpoints {
+  @media all and (min-width: $value) {
+    @for $i from 1 to $grid-columns {
+      .row[class*=#{$key}-]  > .col {
+        min-width: 100%;
+      }
+    }
   }
 }
 
-@media all and (min-width: $breakpoints[md]) {
-  @for $i from 1 to $columns {
-    .row.md-#{$i} > .col { min-width: (1/$i) * 100% }
-  }
-}
-@media all and (min-width: $breakpoint-lg) {
-  @for $i from 1 to $columns {
-    .row.lg-#{$i} > .col { min-width: (1/$i) * 100% }
+@each $key, $value in $breakpoints {
+  @media all and (min-width: $value) {
+    @for $i from 1 to $grid-columns {
+      .row.#{$key}-#{$i} > .col { min-width: #{100/$i+'%'}};
+    }
   }
 }
 
 // RESPONSIVE COLS
-.col[class*=sm-],
-.col[class*=md-],
-.col[class*=lg-]{
-  min-width: 100%;
-}
-
-@for $i from 1 to $columns {
-  .col.xs-#{$i} { min-width: ($i/$columns) * 100% }
-}
-
-/*
-@each $key, $width in $breakpoints {
-
-}
-*/
-
-@media all and (min-width: $breakpoints[sm]) {
-  @for $i from 1 to $columns {
-    .col.sm-#{$i} { min-width: ($i/$columns) * 100% }
-  }
-}
-@media all and (min-width: $breakpoints[md]) {
-  @for $i from 1 to $columns {
-    .col.md-#{$i} { min-width: ($i/$columns) * 100% }
-  }
-}
-@media all and (min-width: $breakpoints[lg]) {
-  @for $i from 1 to $columns {
-    .col.lg-#{$i} { min-width: ($i/$columns) * 100% }
+@each $key, $value in $breakpoints {
+  @media all and (min-width: $value) {
+    @for $i from 1 to $grid-columns {
+      .col[class*=#{$key}-] {
+        min-width: 100%;
+      }
+    }
   }
 }
 
-@for $i from 1 to $columns {
-  .width-#{$i} {
-    width: ($i/$columns) * 100%;
+@each $key, $value in $breakpoints {
+  @media all and (min-width: $value) {
+    @for $i from 1 to $grid-columns {
+      .col.#{$key}-#{$i} {
+        min-width: #{$i*100/$grid-columns+'%' }
+      }
+    }
+  }
+}
+
+
+@each $key, $value in $breakpoints {
+  @media screen and (min-width: $value) {
+    .is-hidden-min-#{$key} {
+      display: none !important;
+    }
   }
 }

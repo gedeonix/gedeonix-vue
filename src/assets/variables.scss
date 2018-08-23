@@ -2,8 +2,7 @@ $background-color: #ffff80;
 
 
 // RESPONSIVE
-$breakpoints: (sm: 40em, md: 64em, lg: 90em) !default;
-$breakpoint-lg:                 map-get($breakpoints, lg) !default;
+
 
 // INPUT
 $input-border-color:            #d4d4d4 !default;

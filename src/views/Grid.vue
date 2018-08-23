@@ -62,6 +62,63 @@
             </Col>
         </Row>
 
+        <hr>
+        <!-- ===================================================================================================== -->
+
+        <h3>Simple (row, no-gutter, col)</h3>
+
+        <div class="row no-gutter">
+            <div class="col">
+                <div>1</div>
+            </div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col">
+                <div>2</div>
+            </div>
+            <div class="col">
+                <div>2</div>
+            </div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col">
+                <div>3</div>
+            </div>
+            <div class="col">
+                <div>3</div>
+            </div>
+            <div class="col">
+                <div>3</div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <div>1</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>2</div>
+            </div>
+            <div class="col">
+                <div>2</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div>3</div>
+            </div>
+            <div class="col">
+                <div>3</div>
+            </div>
+            <div class="col">
+                <div>3</div>
+            </div>
+        </div>
+
         <h3>Max limit (row-x)</h3>
 
         <div class="row-3 no-gutter">
@@ -819,20 +876,20 @@
             <thead>
             <tr>
                 <th></th>
-                <th>xs &lt;=40em</th>
-                <th>40em &lt;= sm &lt; 64em</th>
-                <th>64em &lt;= md &lt; 90em</th>
-                <th>90em &lt;= lg</th>
+                <th>mobile &lt;=40em</th>
+                <th>40em &lt;= tablet &lt; 64em</th>
+                <th>64em &lt;= desktop &lt; 90em</th>
+                <th>90em &lt;= widescreen</th>
             </tr>
             </thead>
 
             <tbody>
             <tr>
                 <th>prefix</th>
-                <td>col-xs-</td>
-                <td>col-sm-</td>
-                <td>col-md-</td>
-                <td>col-lg-</td>
+                <td class="color-mobile">col-mobile-</td>
+                <td class="color-tablet">col-tablet-</td>
+                <td class="color-desktop">col-desktop-</td>
+                <td class="color-widescreen">col-widescreen-</td>
             </tr>
             <tr>
                 <th>gutter with</th>
@@ -845,8 +902,8 @@
 
         </table>
 
-        <h4>Columns in row xs (row xs-x)</h4>
-        <div class="row xs-1 no-gutter">
+        <h4>Columns in row mobile (row mobile-x)</h4>
+        <div class="row mobile-1 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -866,7 +923,7 @@
                 <div>auto</div>
             </div>
         </div>
-        <div class="row xs-2 no-gutter">
+        <div class="row mobile-2 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -886,69 +943,7 @@
                 <div>auto</div>
             </div>
         </div>
-        <div class="row xs-3 no-gutter">
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-        </div>
-
-        <h4>Columns in row sm (row sm-x)</h4>
-        <div class="row sm-1 no-gutter">
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-        </div>
-        <div class="row sm-2 no-gutter">
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-        </div>
-        <div class="row sm-3 no-gutter">
+        <div class="row mobile-3 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -969,8 +964,8 @@
             </div>
         </div>
 
-        <h4>Columns in row md (row md-x)</h4>
-        <div class="row md-1 no-gutter">
+        <h4>Columns in row tablet (row tablet-x)</h4>
+        <div class="row tablet-1 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -990,7 +985,7 @@
                 <div>auto</div>
             </div>
         </div>
-        <div class="row md-2 no-gutter">
+        <div class="row tablet-2 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -1010,69 +1005,7 @@
                 <div>auto</div>
             </div>
         </div>
-        <div class="row md-3 no-gutter">
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-        </div>
-
-        <h4>Columns in row lg (row lg-x)</h4>
-        <div class="row lg-1 no-gutter">
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-        </div>
-        <div class="row lg-2 no-gutter">
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-        </div>
-        <div class="row lg-3 no-gutter">
+        <div class="row tablet-3 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -1093,26 +1026,8 @@
             </div>
         </div>
 
-        <h4>Mix (row & xs-1 sm-2 md-3 lg-4) & (row & xs-4 sm-3 md-2 lg-1)</h4>
-        <div class="row xs-1 sm-2 md-3 lg-4 no-gutter">
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
-            <div class="col">
-                <div>auto</div>
-            </div>
+        <h4>Columns in row desktop (row desktop-x)</h4>
+        <div class="row desktop-1 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -1132,7 +1047,111 @@
                 <div>auto</div>
             </div>
         </div>
-        <div class="row xs-4 sm-3 md-2 lg-1 no-gutter">
+        <div class="row desktop-2 no-gutter">
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+        </div>
+        <div class="row desktop-3 no-gutter">
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+        </div>
+
+        <h4>Columns in row widescreen (row widescreen-x)</h4>
+        <div class="row widescreen-1 no-gutter">
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+        </div>
+        <div class="row widescreen-2 no-gutter">
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+        </div>
+        <div class="row widescreen-3 no-gutter">
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+            <div class="col">
+                <div>auto</div>
+            </div>
+        </div>
+
+        <h4>Mix (row & mobile-1 tablet-2 desktop-3 widescreen-4)</h4>
+        <div class="row mobile-1 tablet-2 desktop-3 widescreen-4 no-gutter">
             <div class="col">
                 <div>auto</div>
             </div>
@@ -1171,150 +1190,233 @@
             </div>
         </div>
 
-        <h3>Responsive in cols (xs sm md lg)</h3>
-        <h4>Columns (col xs-3 sm-3 md-3 lg-3)</h4>
-        <div class="row no-gutter">
-            <div class="col xs-3">
-                <div>xs-3</div>
+        <h4>Mix (row & mobile-4 tablet-3 desktop-2 widescreen-1)</h4>
+        <div class="row mobile-4 tablet-3 desktop-2 widescreen-1 no-gutter">
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col xs-3">
-                <div>xs-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col xs-3">
-                <div>xs-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col xs-3">
-                <div>xs-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col sm-3">
-                <div>sm-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col sm-3">
-                <div>sm-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col sm-3">
-                <div>sm-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col sm-3">
-                <div>sm-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col md-3">
-                <div>md-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col md-3">
-                <div>md-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col md-3">
-                <div>md-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
-            <div class="col md-3">
-                <div>md-3</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col lg-3">
-                <div>lg-3</div>
-            </div>
-            <div class="col lg-3">
-                <div>lg-3</div>
-            </div>
-            <div class="col lg-3">
-                <div>lg-3</div>
-            </div>
-            <div class="col lg-3">
-                <div>lg-3</div>
+            <div class="col">
+                <div>auto</div>
             </div>
         </div>
 
-        <h4>Columns (col xs-4 sm-4 md-4 lg-4)</h4>
+        <h3>Responsive in cols (mobile tablet desktop widescreen)</h3>
+        <h4>Columns (col mobile-3 tablet-3 desktop-3 widescreen-3)</h4>
         <div class="row no-gutter">
-            <div class="col xs-4">
-                <div>xs-4</div>
+            <div class="col mobile-3">
+                <div>mobile-3</div>
             </div>
-            <div class="col xs-4">
-                <div>xs-4</div>
+            <div class="col mobile-3">
+                <div>mobile-3</div>
             </div>
-            <div class="col xs-4">
-                <div>xs-4</div>
+            <div class="col mobile-3">
+                <div>mobile-3</div>
+            </div>
+            <div class="col mobile-3">
+                <div>mobile-3</div>
             </div>
         </div>
         <div class="row no-gutter">
-            <div class="col sm-4">
-                <div>sm-4</div>
+            <div class="col tablet-3">
+                <div>tablet-3</div>
             </div>
-            <div class="col sm-4">
-                <div>sm-4</div>
+            <div class="col tablet-3">
+                <div>tablet-3</div>
             </div>
-            <div class="col sm-4">
-                <div>sm-4</div>
+            <div class="col tablet-3">
+                <div>tablet-3</div>
             </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col md-4">
-                <div>md-4</div>
-            </div>
-            <div class="col md-4">
-                <div>md-4</div>
-            </div>
-            <div class="col md-4">
-                <div>md-4</div>
+            <div class="col tablet-3">
+                <div>tablet-3</div>
             </div>
         </div>
         <div class="row no-gutter">
-            <div class="col lg-4">
-                <div>lg-4</div>
+            <div class="col desktop-3">
+                <div>desktop-3</div>
             </div>
-            <div class="col lg-4">
-                <div>lg-4</div>
+            <div class="col desktop-3">
+                <div>desktop-3</div>
             </div>
-            <div class="col lg-4">
-                <div>lg-4</div>
+            <div class="col desktop-3">
+                <div>desktop-3</div>
+            </div>
+            <div class="col desktop-3">
+                <div>desktop-3</div>
+            </div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col widescreen-3">
+                <div>widescreen-3</div>
+            </div>
+            <div class="col widescreen-3">
+                <div>widescreen-3</div>
+            </div>
+            <div class="col widescreen-3">
+                <div>widescreen-3</div>
+            </div>
+            <div class="col widescreen-3">
+                <div>widescreen-3</div>
             </div>
         </div>
 
-        <h4>Mix columns (col xs-1 sm-2 md3 lg-4)</h4>
+        <h4>Columns (col mobile-4 tablet-4 desktop-4 widescreen-4)</h4>
         <div class="row no-gutter">
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-4">
+                <div>mobile-4</div>
+            </div>
+            <div class="col mobile-4">
+                <div>mobile-4</div>
+            </div>
+            <div class="col mobile-4">
+                <div>mobile-4</div>
+            </div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col tablet-4">
+                <div>tablet-4</div>
+            </div>
+            <div class="col tablet-4">
+                <div>tablet-4</div>
+            </div>
+            <div class="col tablet-4">
+                <div>tablet-4</div>
+            </div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col widescreen-4">
+                <div>desktop-4</div>
+            </div>
+            <div class="col widescreen-4">
+                <div>desktop-4</div>
+            </div>
+            <div class="col widescreen-4">
+                <div>desktop-4</div>
+            </div>
+        </div>
+        <div class="row no-gutter">
+            <div class="col widescreen-4">
+                <div>widescreen-4</div>
+            </div>
+            <div class="col widescreen-4">
+                <div>widescreen-4</div>
+            </div>
+            <div class="col widescreen-4">
+                <div>widescreen-4</div>
+            </div>
+        </div>
+
+        <h4>Mix columns (col mobile-12 tablet-6 desktop-4 widescreen-3)</h4>
+        <div class="row no-gutter">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
-            <div class="col xs-12 sm-6 md-4 lg-3">
+            <div class="col mobile-12 tablet-6 desktop-4 widescreen-3">
                 <div>col</div>
             </div>
         </div>
+
+        <h4>Mix columns (col mobile-12 tablet-6)</h4>
+        <div class="row no-gutter">
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+            <div class="col mobile-12 tablet-6">
+                <div>col</div>
+            </div>
+        </div>
+
+        <br>
+
     </main>
 </template>
 
