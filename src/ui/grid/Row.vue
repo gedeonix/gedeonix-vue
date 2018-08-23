@@ -1,5 +1,5 @@
 <template>
-    <div class="row" :class="style">
+    <div class="row" :class="classes">
         <slot></slot>
     </div>
 </template>
@@ -11,7 +11,7 @@ export default {
     noGutter: { type: Boolean, default: false }
   },
   computed: {
-      style() {
+      classes() {
         return {
             'no-gutter': this.noGutter
         }

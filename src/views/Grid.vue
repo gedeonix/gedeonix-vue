@@ -108,69 +108,69 @@
         </div>
 
         <h3>Offsets (offset-x)</h3>
-        <div class="row no-gutter">
-            <div class="col offset-1">
+        <Row no-gutter>
+            <Col offset="1">
                 <div>1</div>
-            </div>
-            <div class="offset-1"></div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col offset-2">
+            </Col>
+            <Offset offset="1"></Offset>
+        </Row>
+        <Row no-gutter>
+            <Col offset="2">
                 <div>1</div>
-            </div>
-            <div class="offset-2"></div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col offset-3">
+            </Col>
+            <Offset offset="2"></Offset>
+        </Row>
+        <Row no-gutter>
+            <Col offset="3">
                 <div>1</div>
-            </div>
-            <div class="offset-3"></div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col offset-4">
+            </Col>
+            <Offset offset="3"></Offset>
+        </Row>
+        <Row no-gutter>
+            <Col offset="4">
                 <div>1</div>
-            </div>
-            <div class="offset-4"></div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col offset-5">
+            </Col>
+            <Offset offset="4"></Offset>
+        </Row>
+        <Row no-gutter>
+            <Col offset="5">
                 <div>1</div>
-            </div>
-            <div class="offset-5"></div>
-        </div>
+            </Col>
+            <Offset offset="5"></Offset>
+        </Row>
 
         <br>
 
-        <div class="row">
-            <div class="col offset-1">
+        <Row>
+            <Col offset="1">
                 <div>1</div>
-            </div>
-            <div class="offset-1"></div>
-        </div>
-        <div class="row">
-            <div class="col offset-2">
+            </Col>
+            <Offset offset="1"></Offset>
+        </Row>
+        <Row>
+            <Col offset="2">
                 <div>1</div>
-            </div>
-            <div class="offset-2"></div>
-        </div>
-        <div class="row">
-            <div class="col offset-3">
+            </Col>
+            <Offset offset="2"></Offset>
+        </Row>
+        <Row>
+            <Col offset="3">
                 <div>1</div>
-            </div>
-            <div class="offset-3"></div>
-        </div>
-        <div class="row">
-            <div class="col offset-4">
+            </Col>
+            <Offset offset="3"></Offset>
+        </Row>
+        <Row>
+            <Col offset="4">
                 <div>1</div>
-            </div>
-            <div class="offset-4"></div>
-        </div>
-        <div class="row">
-            <div class="col offset-5">
+            </Col>
+            <Offset offset="4"></Offset>
+        </Row>
+        <Row>
+            <Col offset="5">
                 <div>1</div>
-            </div>
-            <div class="offset-5"></div>
-        </div>
+            </Col>
+            <Offset offset="5"></Offset>
+        </Row>
 
         <h3>Columns (col-x)</h3>
         <div class="row no-gutter">
@@ -1369,10 +1369,10 @@
 </template>
 
 <script>
-    import { Col, Container, Row } from "@/ui";
+    import { Col, Container, Offset, Row } from "@/ui";
     export default {
-        components: {Col, Container, Row}
-    };
+        components: {Col, Container, Offset, Row}
+    }
 </script>
 
 <style>

@@ -1,12 +1,13 @@
+/* experimental */
+
 <template>
-    <div class="col" :class="classes">
-        <slot></slot>
+    <div :class="classes">
     </div>
 </template>
 
 <script>
 export default {
-  name: "Col",
+  name: "Offset",
   props: {
     offset: { type: Number, default: undefined },
   },
