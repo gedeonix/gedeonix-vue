@@ -69,43 +69,43 @@
 
         <h3>Max limit (row-x)</h3>
 
-        <div class="row-3 no-gutter">
-            <div class="col">
+        <Row limit="3" no-gutter>
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
         <br>
 
-        <div class="row-3">
-            <div class="col">
+        <Row limit="3">
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-            <div class="col">
+            </Col>
+            <Col>
                 <div>1</div>
-            </div>
-        </div>
+            </Col>
+        </Row>
 
         <h3>Offsets (offset-x)</h3>
         <Row no-gutter>
@@ -1369,7 +1369,8 @@
 </template>
 
 <script>
-    import { Col, Container, Offset, Row } from "@/ui";
+    import {Col, Container, Offset, Row} from "@/ui";
+
     export default {
         components: {Col, Container, Offset, Row}
     }

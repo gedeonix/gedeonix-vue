@@ -6,21 +6,19 @@
 </template>
 
 <script>
-export default {
-  name: "Offset",
-  props: {
-    offset: { type: Number, default: undefined },
-  },
-  computed: {
-      classes() {
-        let c = {
-
-        };
-        if(this.offset !== undefined) {
-            c['offset-'+ this.offset] = true
+    export default {
+        name: "Offset",
+        props: {
+            offset: {type: Number, default: undefined},
+        },
+        computed: {
+            classes() {
+                let c = {};
+                if (this.offset !== undefined) {
+                    c['offset-' + this.offset] = true
+                }
+                return c;
+            }
         }
-        return c;
-    }
-  }
-};
+    };
 </script>
