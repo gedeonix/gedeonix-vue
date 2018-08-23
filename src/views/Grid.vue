@@ -6,18 +6,15 @@
 
         <h2>Simple</h2>
 
-        <h3>Simple (row, no-gutter, col)</h3>
+        <h3>Simple (row, gutter, col)</h3>
 
-        <Row>
-            <Col>
-                <div>1</div>
-            </Col>
+        <Row no-gutter>
             <Col>
                 <div>1</div>
             </Col>
         </Row>
 
-        <Row>
+        <Row no-gutter>
             <Col>
                 <div>2</div>
             </Col>
@@ -26,7 +23,7 @@
             </Col>
         </Row>
 
-        <Row>
+        <Row no-gutter>
             <Col>
                 <div>3</div>
             </Col>
@@ -69,60 +66,6 @@
 
         <hr>
         <!-- ===================================================================================================== -->
-
-        <h3>Simple (row, no-gutter, col)</h3>
-
-        <div class="row no-gutter">
-            <div class="col">
-                <div>1</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
-                <div>2</div>
-            </div>
-            <div class="col">
-                <div>2</div>
-            </div>
-        </div>
-        <div class="row no-gutter">
-            <div class="col">
-                <div>3</div>
-            </div>
-            <div class="col">
-                <div>3</div>
-            </div>
-            <div class="col">
-                <div>3</div>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="row">
-            <div class="col">
-                <div>1</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div>2</div>
-            </div>
-            <div class="col">
-                <div>2</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div>3</div>
-            </div>
-            <div class="col">
-                <div>3</div>
-            </div>
-            <div class="col">
-                <div>3</div>
-            </div>
-        </div>
 
         <h3>Max limit (row-x)</h3>
 
