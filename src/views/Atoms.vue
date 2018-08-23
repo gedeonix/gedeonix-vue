@@ -1,7 +1,14 @@
 <template>
-  <main class="main container">
+  <Container class="main">
     <h1>Atoms</h1>
     ...
 
-  </main>
+  </Container>
 </template>
+
+<script>
+    import { Container } from "@/ui";
+    export default {
+        components: {Container}
+    };
+</script>

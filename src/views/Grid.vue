@@ -1,18 +1,23 @@
 <template>
-    <main class="main container">
+
+    <Container class="main">
+
         <h1>Grid</h1>
 
         <h2>Simple</h2>
 
         <h3>Simple (row, no-gutter, col)</h3>
 
-        <Row class="no-gutter">
+        <Row>
+            <Col>
+                <div>1</div>
+            </Col>
             <Col>
                 <div>1</div>
             </Col>
         </Row>
 
-        <Row class="no-gutter">
+        <Row>
             <Col>
                 <div>2</div>
             </Col>
@@ -21,7 +26,7 @@
             </Col>
         </Row>
 
-        <Row class="no-gutter">
+        <Row>
             <Col>
                 <div>3</div>
             </Col>
@@ -1417,13 +1422,13 @@
 
         <br>
 
-    </main>
+    </Container>
 </template>
 
 <script>
-    import { Col, Row } from "@/ui";
+    import { Col, Container, Row } from "@/ui";
     export default {
-        components: {Col, Row}
+        components: {Col, Container, Row}
     };
 </script>
 

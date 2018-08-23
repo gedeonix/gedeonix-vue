@@ -1,14 +1,11 @@
 <template>
-    <div class="row" :class="{ 'no-gutter': true }">
+    <div class="container">
         <slot></slot>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'Row',
-  props: {
-
-  }
+  name: "Container"
 };
 </script>
