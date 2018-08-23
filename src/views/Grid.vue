@@ -1319,9 +1319,7 @@
 </template>
 
 <script>
-    import Row from "../components/grid/Row";
-    import Col from "../components/grid/Col";
-
+    import { Col, Row } from "@/ui";
     export default {
         components: {Col, Row}
     };
